@@ -11,10 +11,10 @@ jobs:
     name: 重新Fork仓库
     steps:
     - name: 重新拉取danshui-git/Compile仓库
-      uses: danshui-git/github-forks-sync-action@main
+      uses: ixxmu/github-forks-sync-action@main
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
-        upstream_repository: danshui-git/Compile
+        upstream_repository: ixxmu/build-openwrt
         upstream_branch: main
         target_repository: JingMeng1998/OpenWrt-R2S       #修改成你的帐号/仓库名字
         target_branch: main                                #你仓库的分支
